@@ -1,73 +1,180 @@
-# Welcome to your Lovable project
+# 🚀 Trintz AI Resume Optimizer
 
-## Project info
+An AI-powered resume optimization platform that analyzes, scores, and rewrites resumes to improve ATS (Applicant Tracking System) compatibility and increase job selection chances.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## 🔥 Overview
 
-There are several ways of editing your application.
+Trintz AI Resume Optimizer helps job seekers improve their resumes using:
 
-**Use Lovable**
+* 📊 ATS scoring system
+* 🧠 AI-powered resume rewriting
+* 🔍 Keyword gap analysis
+* ✨ Structured, optimized output
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Built as a full-stack SaaS application using modern technologies.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## ⚙️ Tech Stack
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 🖥️ Frontend
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+* React.js
+* TypeScript
+* Vite
+* Tailwind CSS
 
-Follow these steps:
+### ⚡ Backend
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+* FastAPI (Python)
+* SQLAlchemy
+* SQLite (current) → scalable to PostgreSQL
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 🤖 AI Integration
 
-# Step 3: Install the necessary dependencies.
-npm i
+* OpenAI-compatible API (via aicredits.in)
+* Structured JSON response handling
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### 📧 Services
+
+* Resend (Email verification)
+* JWT Authentication
+
+---
+
+## 🚀 Features
+
+* ✅ Resume Upload (PDF/DOCX/TXT)
+* ✅ ATS Score Calculation (rule-based)
+* ✅ Keyword Matching & Gap Detection
+* ✅ AI Resume Optimization
+* ✅ Before vs After Improvements
+* ✅ Authentication System (JWT)
+* ✅ Email Verification Flow
+* ✅ Resume History Tracking
+
+---
+
+## 🧠 ATS Scoring Logic
+
+The ATS score is calculated based on:
+
+* 50% → Keyword Match
+* 20% → Section Completeness
+* 30% → Content Strength (impact-based writing)
+
+---
+
+## 📦 Project Structure
+
+```
+trintz-resume-optimizer/
+│
+├── backend/
+│   ├── main.py
+│   ├── routers/
+│   ├── models/
+│   ├── database.py
+│   └── requirements.txt
+│
+├── frontend/
+│   ├── src/
+│   ├── components/
+│   └── vite.config.ts
+│
+└── README.md
+```
+
+---
+
+## ⚙️ Setup Instructions
+
+### 🔹 Backend
+
+```bash
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
+
+---
+
+### 🔹 Frontend
+
+```bash
+cd frontend
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🌐 Environment Variables
 
-**Use GitHub Codespaces**
+Create `.env` files for backend:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```
+RESEND_API_KEY=your_key
+EMAIL_FROM=noreply@yourdomain.com
 
-## What technologies are used for this project?
+OPENAI_API_KEY=your_key
+OPENAI_API_BASE_URL=https://api.aicredits.in/v1
 
-This project is built with:
+SECRET_KEY=your_secret
+ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=60
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## 🚀 Deployment
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+* Backend → Render
+* Frontend → Vercel (recommended)
+* Email → Resend
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## 🎯 Problem We Solve
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Most resumes fail ATS screening due to:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+* Missing keywords
+* Weak descriptions
+* Poor formatting
+
+We solve this using AI + structured optimization.
+
+---
+
+## 🧩 Future Improvements
+
+* PDF export with templates
+* Visual resume editor
+* Better personalization
+* Multi-language support
+* PostgreSQL migration
+
+---
+
+## 🤝 Team
+
+Trintz — Student startup team focused on AI-driven solutions for career development.
+
+---
+
+## 📌 Status
+
+✅ MVP Completed
+🚀 Actively improving & scaling
+
+---
+
+## ⭐ Contribute
+
+Feel free to fork, improve, and contribute to the project!
+
+---
+
